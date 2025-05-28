@@ -1,10 +1,7 @@
 from __future__ import annotations
 
-import uuid
 from enum import Enum
-from typing import Optional
-
-from pydantic import BaseModel
+from .user import *  # noqa
 
 
 class MediaType(Enum):
@@ -43,16 +40,3 @@ class WorkMode(Enum):
     ONSITE = "Onsite"
     ONLINE_ONSITE = "OnsiteOnline"
 
-
-class UserModel(BaseModel):
-    id: uuid.UUID = uuid.uuid4()
-
-    name: str
-    email: str
-    password: str
-
-    profile_image_uri: Optional[str] = None
-    age: Optional[int] = None
-    genre: Optional[UserGenre] = None
-    payment_mode: Optional[PaymentMode] = None
-    work_mode: Optional[WorkMode] = None

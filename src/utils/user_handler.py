@@ -83,3 +83,7 @@ class UserHandler:
         assert len(response) == count
 
         return UserModel(**response[0])
+
+    async def follow(self, user: Optional[UserModel], *, user_id: Union[UUID, str]):
+        if user is None:
+            return
