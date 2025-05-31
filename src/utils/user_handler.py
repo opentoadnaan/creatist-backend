@@ -6,6 +6,7 @@ from uuid import UUID
 
 from click import Option
 from dotenv import load_dotenv
+from src.models.user import FollowerModel
 from supabase import AsyncClient, create_async_client
 
 from src.models import UserModel
@@ -84,6 +85,16 @@ class UserHandler:
 
         return UserModel(**response[0])
 
-    async def follow(self, user: Optional[UserModel], *, user_id: Union[UUID, str]):
-        if user is None:
-            return
+    async def follow(self, following_id: Union[UUID, str], *, user_id: Union[UUID, str]):
+        if isinstance(user_id, str):
+            user_id = UUID(user_id)
+
+        if isinstance(following_id, str):
+            user_id = UUID(following_id)
+
+        data = FollowerModel(user_id=user_id, following_id=following_id)
+        payload = data.model_dump(mode="json")
+
+        response = await (
+            self.supabase.table("FollowerModel").insert(payload).execute()
+        )
