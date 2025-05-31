@@ -20,4 +20,4 @@ async def startup():
 
 app = FastAPI(title="Creatist API Documentation", on_startup=[startup])
 
-from .routes import *  # noqa
+from .routes import *  # 
