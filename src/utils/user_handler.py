@@ -4,7 +4,6 @@ import os
 from typing import Optional, Union, List
 from uuid import UUID
 
-from click import Option
 from dotenv import load_dotenv
 from src.models.user import (
     UserModel, ShowcaseModel, CommentModel, VisionBoardModel,
@@ -308,6 +307,7 @@ class UserHandler:
             .eq("password", password)
             .execute()
         )
+        print(response)
         return self._parse(response.data)
 
     async def _fetch_user_by_id(self, user_id):

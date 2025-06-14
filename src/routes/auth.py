@@ -40,16 +40,16 @@ async def signin_route(request: Request, credential: Credential) -> JSONResponse
 
 @router.post("/signup")
 async def signup_route(request: Request, user: UserModel) -> JSONResponse:
-    user = await user_handler.fetch_user(email=user.email, password=user.password)
-    if user is not None:
+    _user = await user_handler.fetch_user(email=user.email, password=user.password)
+    if _user is not None:
         raise HTTPException(400, "User already exists")
 
-    await user_handler.create_user(user)
+    await user_handler.create_user(user=user)
 
     return JSONResponse({"message": "success"})
 
 
-@router.post("/fetch")
+@router.get("/fetch")
 async def fetch_user_route(token: Token = Depends(get_user_token)) -> UserModel:
     user = await user_handler.fetch_user(user_id=token.sub)
     return user

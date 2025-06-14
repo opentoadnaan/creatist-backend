@@ -1,9 +1,6 @@
 from __future__ import annotations
 
-from time import perf_counter
 import os
-from typing import Optional
-from uuid import UUID
 
 from fastapi import Request, APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
@@ -13,7 +10,6 @@ from src.app import app, user_handler
 from src.utils import Token, TokenHandler
 from src.models.user import (
     UserModel, ShowcaseModel, CommentModel, VisionBoardModel,
-    ShowCaseLikeModel, ShowCaseBookmarkModel, CommentUpvoteModel,
     VisionBoardTaskModel
 )
 

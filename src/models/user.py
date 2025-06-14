@@ -15,7 +15,7 @@ class UserModel(BaseModel):
 
     profile_image_url: Optional[str] = None
     age: Optional[int] = None
-    genre: Optional[UserGenre] = None
+    genres: Optional[UserGenre] = None
     payment_mode: Optional[PaymentMode] = None
     work_mode: Optional[WorkMode] = None
 
