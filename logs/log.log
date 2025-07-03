@@ -2,3 +2,157 @@
 2025-06-14 15:38:14,375 - app - INFO - info - Access token created for user: 1c72a196-f684-4c35-9e6d-cbce70cb537b
 2025-06-14 17:12:01,675 - app - DEBUG - debug - Creating access token for user: 1f484ff3-b3d3-4a79-8942-5f5c73312b52
 2025-06-14 17:12:01,679 - app - INFO - info - Access token created for user: 1f484ff3-b3d3-4a79-8942-5f5c73312b52
+2025-06-15 11:40:01,928 - app - DEBUG - debug - Decoding token
+2025-06-15 11:40:01,929 - app - DEBUG - debug - Decoding token
+2025-06-15 11:40:01,932 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-15 11:40:01,932 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-15 11:40:13,540 - app - DEBUG - debug - Decoding token
+2025-06-15 11:40:13,550 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-15 11:43:01,007 - app - DEBUG - debug - Decoding token
+2025-06-15 11:43:01,014 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-15 11:43:01,226 - app - DEBUG - debug - Creating access token for user: 685c3e95-1517-4d6b-9c73-2a030c010ca0
+2025-06-15 11:43:01,228 - app - INFO - info - Access token created for user: 685c3e95-1517-4d6b-9c73-2a030c010ca0
+2025-06-15 11:43:01,419 - app - DEBUG - debug - Decoding token
+2025-06-15 11:43:01,420 - app - INFO - info - Token successfully decoded
+2025-06-16 09:36:44,673 - app - DEBUG - debug - Decoding token
+2025-06-16 09:36:44,678 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-16 09:37:29,459 - app - DEBUG - debug - Decoding token
+2025-06-16 09:37:29,463 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-16 09:37:30,541 - app - DEBUG - debug - Creating access token for user: 25b8559d-25f5-4961-9f49-192c13633b61
+2025-06-16 09:37:30,542 - app - INFO - info - Access token created for user: 25b8559d-25f5-4961-9f49-192c13633b61
+2025-06-16 09:37:30,560 - app - DEBUG - debug - Decoding token
+2025-06-16 09:37:30,560 - app - INFO - info - Token successfully decoded
+2025-06-16 12:42:45,175 - app - DEBUG - debug - Decoding token
+2025-06-16 12:42:45,179 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-16 12:43:21,837 - app - DEBUG - debug - Decoding token
+2025-06-16 12:43:21,841 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-06-16 12:43:22,745 - app - DEBUG - debug - Creating access token for user: e12d03ef-c5c6-4fc1-bd96-57e07364b6f4
+2025-06-16 12:43:22,747 - app - INFO - info - Access token created for user: e12d03ef-c5c6-4fc1-bd96-57e07364b6f4
+2025-06-16 12:43:22,806 - app - DEBUG - debug - Decoding token
+2025-06-16 12:43:22,807 - app - INFO - info - Token successfully decoded
+2025-07-03 12:39:32,510 - app - DEBUG - debug - Decoding token
+2025-07-03 12:39:32,514 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-07-03 12:39:32,695 - app - DEBUG - debug - Decoding token
+2025-07-03 12:39:32,695 - app - ERROR - error - Token decoding failed due to invalid token
+Traceback (most recent call last):
+  File "/Users/air/Documents/GitHub/creatist-backend/src/utils/token_handler.py", line 72, in decode_token
+    decoded = jwt.decode(token, self.secret, algorithms=[self.algorithm])
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/Users/air/Documents/GitHub/creatist-backend/.venv/lib/python3.9/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-07-03 12:39:33,867 - app - DEBUG - debug - Creating access token for user: e12d03ef-c5c6-4fc1-bd96-57e07364b6f4
+2025-07-03 12:39:33,869 - app - INFO - info - Access token created for user: e12d03ef-c5c6-4fc1-bd96-57e07364b6f4

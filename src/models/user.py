@@ -18,6 +18,7 @@ class UserModel(BaseModel):
     genres: Optional[UserGenre] = None
     payment_mode: Optional[PaymentMode] = None
     work_mode: Optional[WorkMode] = None
+    
 
 
 class ShowcaseModel(BaseModel):
