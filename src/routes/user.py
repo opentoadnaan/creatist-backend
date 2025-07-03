@@ -172,7 +172,7 @@ async def create_visionboard_draft(request: Request, visionboard_id: str, token:
     await user_handler.create_visionboard_draft(visionboard_id=visionboard_id, user_id=token.sub)
     return JSONResponse({"message": "success"})
 
-# Browse APIs
+# Browse APIs Discover Page 
 @router.get("/browse/near-by-artist")
 async def get_nearby_artists(request: Request, token: Token = Depends(get_user_token)):
     artists = await user_handler.get_nearby_artists(user_id=token.sub)
@@ -189,3 +189,4 @@ async def get_artist_showcases(request: Request, artist_id: str, token: Token = 
     return JSONResponse({"message": "success", "showcases": showcases})
 
 app.include_router(router)
+# updateing model
